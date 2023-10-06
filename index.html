@@ -18,8 +18,38 @@
     <nav class="nav">
       <img class="close" src="./images/icon-close-menu.svg" alt="menu">
       <div class="navbar">
-        <a href="#">Features <img class="arrow_down" src="./images/icon-arrow-down.svg" alt="arrow_down"></a>
-        <a href="#">Company <img class="arrow_down" src="./images/icon-arrow-down.svg" alt="arrow_down"></a>
+
+        <a class="featureBtn" href="#">
+          Features <img class="arrow_down" id="arrow_feature" src="./images/icon-arrow-down.svg" alt="arrow_down">
+          <div class="feature_container">
+            <div class="line">
+              <img src="./images/icon-todo.svg" alt="todo">
+              <p class="todo">Todo List</p>
+            </div>
+            <div class="line">
+              <img src="./images/icon-calendar.svg" alt="calendar">
+              <p class="calendar">Calendar</p>
+            </div>
+            <div class="line">
+              <img src="./images/icon-reminders.svg" alt="reminders">
+              <p class="reminders">Reminders</p>
+            </div>
+            <div class="line">
+              <img src="./images/icon-planning.svg" alt="planning">
+              <p class="planning">Planning</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="companyBtn" href="#">Company <img class="arrow_down" id="arrow_company"
+            src="./images/icon-arrow-down.svg" alt="arrow_down">
+          <div class="company_container">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+        </a>
+
         <a href="#">Careers</a>
         <a href="#">About</a>
       </div>
@@ -27,9 +57,10 @@
         <button class="btn">Login</button>
         <button class="register">Register</button>
       </div>
+
+
     </nav>
     <img class="menu" src="./images/icon-menu.svg" alt="menu">
-
   </header>
 
   <div class="overlay"></div>
@@ -37,6 +68,7 @@
   <main class="container">
 
     <div class="info">
+
       <h1 class="title">Make remote work</h1>
       <p class="description">Get your team in sync, no matter your location. Streamline processes, create team rituals,
         and watch productivity soar.
