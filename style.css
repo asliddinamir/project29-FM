@@ -17,6 +17,7 @@ body {
     font-size: 18px;
     min-height: 100vh;
     width: 100vw;
+    background-color: var(--Almost-White);
 }
 
 .header {
@@ -87,4 +88,63 @@ body {
 
 .register:hover {
     color: var(--Almost-Black);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    min-height: 90vh;
+    padding: 2rem 2rem 3rem 5rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 4.75rem;
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+}
+
+.description {
+    margin: 0 0 56px;
+    line-height: 1.5;
+    color: var(--Medium-Gray);
+    padding-right: 32px;
+}
+
+.hero_btn {
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    font-family: inherit;
+    border: 1px solid var(--Almost-Black);
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    width: 160px;
+    margin-bottom: 5rem;
+    transition: .3s ease;
+}
+
+.hero_btn:hover {
+    background: transparent;
+    color: var(--Almost-Black);
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_hero {
+    background: url('./images/image-hero-desktop.png') no-repeat center center/contain;
+    min-width: 40vw;
+    height: auto;
 }
