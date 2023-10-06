@@ -96,7 +96,7 @@ body {
     justify-content: space-around;
     width: 100vw;
     min-height: 90vh;
-    padding: 2rem 2rem 3rem 5rem;
+    padding: 2rem 2rem 5rem 5rem;
 }
 
 .info {
@@ -159,6 +159,14 @@ footer a {
     color: red;
 }
 
+.menu {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
 @media(min-width:861px) {
     footer {
         position: absolute;
@@ -170,7 +178,12 @@ footer a {
 
 @media(max-width:860px) {
     body {
-        padding-block: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .header {
+        justify-content: space-between;
+        margin-bottom: 2rem;
     }
 
     .container {
@@ -178,12 +191,62 @@ footer a {
         padding: 0;
     }
 
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.show-nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        padding-top: 60px;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .nav.show-nav .close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .nav.show-nav a {
+        display: block;
+        padding: 1rem 2rem;
+        text-align: left;
+        text-decoration: none;
+        font-size: 16px;
+        transition: .3s ease;
+    }
+
+    .nav.show-nav .signup {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav.show-nav .signup .btn {
+        margin-bottom: 10px;
+    }
+
+
+
     .info {
         text-align: center;
         align-items: center;
         height: auto;
         padding: 1rem 1rem 2rem 1rem;
-        background-color: red;
         width: 100%;
     }
 
