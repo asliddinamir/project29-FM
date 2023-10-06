@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,4 +14,77 @@
 
 body {
     font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 4rem;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-block: .5rem;
+}
+
+.navbar a {
+    padding-inline: 1rem;
+    color: var(--Medium-Gray);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s ease;
+}
+
+.navbar a:hover {
+    color: var(--Almost-Black);
+}
+
+.navbar a img {
+    margin-left: .5rem;
+    width: 12px;
+}
+
+.signup button {
+    margin-inline: 1rem;
+    font-family: inherit;
+    font-size: 16px;
+    transition: .3s ease;
+}
+
+.btn {
+    color: var(--Medium-Gray);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.btn:hover {
+    color: var(--Almost-Black);
+}
+
+.register {
+    background-color: transparent;
+    color: var(--Medium-Gray);
+    border: 2px solid var(--Almost-Black);
+    font-family: inherit;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.register:hover {
+    color: var(--Almost-Black);
 }
